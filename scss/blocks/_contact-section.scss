@@ -1,0 +1,123 @@
+.contact-section {
+    padding-bottom: 120px;
+    background-image: url(../../img/main/contact-bg1.svg), url(../../img/main/contact-bg2.svg);
+    background-repeat: no-repeat;
+    background-position-y: top, bottom;
+    background-position-x: calc(50% - 720px), calc(50% + 720px);
+}
+
+.contact-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section__left-title {
+    @include font-style($font-Livvic700, 64px, 100px, #FFF){
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.contact-section__left-subtitle {
+    @include font-style($font-Livvic700, 38px, 48px, $color-light-coral) {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+}
+
+.contact-section__list {
+    @include list-unstyled;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -8px;
+}
+
+.contact-section__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &:before {
+        content: "";
+        width: 72px;
+        height: 72px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 23px;
+        flex-shrink: 0;
+    }
+
+    &:nth-child(1)::before{background-image: url(../../img/main/icon1.svg);}
+    &:nth-child(2)::before{background-image: url(../../img/main/icon2.svg);}
+    &:nth-child(3)::before{background-image: url(../../img/main/icon3.svg);}
+}
+
+.contact-section__item-box {
+    max-width: 445px;
+}
+
+.contact-section__item-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFF;
+}
+
+.contact-section__right {
+    width: 540px;
+}
+
+.contact-section__form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-section__input {
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 24px;
+    padding-left: 15px;
+    padding-bottom: 16px;
+}
+
+.contact-section__input::placeholder {
+    @include font-style($font-Livvic600, 15px, 25px, #FFF){
+        opacity: 0.6;
+        letter-spacing: -0.115385px;
+    }
+}
+
+.contact-section__button {
+    padding: 9px 32px 11px 32px;
+    border: none;
+    border-radius: 24px;
+}
+
+@include max(1440px) {
+    .contact-section {
+        background-position-x: calc(50% - 720px), calc(100% + 100px);
+    }
+}
+
+@include max(1000px) {
+    .contact-section__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-section__left {
+        margin-bottom: 64px;
+    }
+}
+
+@include max(580px) {
+    .contact-section__left-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .contact-section__right {
+        width: 280px;
+    }
+}

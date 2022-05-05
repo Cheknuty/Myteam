@@ -1,0 +1,19 @@
+.social-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.social-box__link {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.social-box__link:hover {
+    color: $color-light-coral;
+}
+
+.social-box__link:not(:last-child) {
+    margin-right: 16px;
+}

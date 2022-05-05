@@ -1,0 +1,18 @@
+.button-secondary {
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.button-secondary:hover {
+    background-color: $color-rapture-blue;
+    border: 2px solid $color-rapture-blue;
+}
+
+.button-secondary:disabled {
+    opacity: 0.25;
+}
+

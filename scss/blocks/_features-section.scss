@@ -1,0 +1,147 @@
+.features-section {
+    padding: 140px 0;
+    background-color: $color-sacramento-state-green;
+    background-image: url(../../img/main/sec2-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 720px);
+    background-position-y: bottom;
+}
+
+.features-section__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.features-section__box {
+    display: flex;
+    flex-direction: column;
+    max-width: 445px;
+}
+
+.features-section__line {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background-color: $color-light-coral;
+    margin: 0 0 54px 0;
+}
+
+.features-section__txt {
+    @include font-style($font-Livvic700, 48px, 48px, #FFF) {
+        margin: 0;
+    }
+}
+
+.features-section__list {
+    @include list-unstyled;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -32px;
+}
+
+.features-section__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    &:before {
+        content: "";
+        width: 72px;
+        height: 72px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 23px;
+        flex-shrink: 0;
+    }
+
+    &:nth-child(1)::before{background-image: url(../../img/main/icon1.svg);}
+    &:nth-child(2)::before{background-image: url(../../img/main/icon2.svg);}
+    &:nth-child(3)::before{background-image: url(../../img/main/icon3.svg);}
+}
+
+.features-section__item-box {
+    max-width: 445px;
+}
+
+.features-section__item-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: $color-light-coral;
+}
+
+.features-section__item-subtitle {
+    @include font-style($font-Livvic600, 15px, 25px, #FFF) {
+        margin: 0;
+        opacity: 0.8;
+    }
+}
+
+@include max(1440px) {
+    .features-section {
+        background-position-x: calc(100% + 100px);
+    }
+}
+
+@include max(1000px) {
+    .features-section__container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .features-section__box {
+        margin-bottom: 64px;
+        max-width: calc(75%);
+    }
+
+    .features-section__item-box {
+        max-width: calc(75%);
+    }
+}
+
+@include max(768px) {
+    .features-section {
+        background-position-y: top;
+    }
+
+    .features-section__container {
+        align-items: center;
+    }
+
+    .features-section__box {
+        max-width: 530px;
+    }
+
+    .features-section__txt {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .features-section__item {
+        justify-content: center;
+    }
+
+    .features-section__item-box {
+        max-width: 460px;
+    }
+}
+
+@include max(400px) {
+    .features-section__container {
+        align-items: flex-start;
+    }
+
+    .features-section__box {
+        margin-bottom: 72px;
+        max-width: 240px;
+    }
+
+    .features-section__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &::before {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.stories-section {
+    padding: 140px 0 150px 0;
+    text-align: center;
+    background-image: url(../../img/main/sec3-1.svg), url(../../img/main/sec3-2.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 648px), calc(50% + 620px);
+    background-position-y: top, calc(100% + 100px);
+}
+
+.stories-section__txt {
+    @include font-style($font-Livvic700, 48px, 48px, #FFF) {
+        margin-top: 0;
+        margin-bottom: 56px;
+    }
+}
+
+.stories-section__txt-blue {
+    color: $color-rapture-blue;
+}
+
+.stories-section__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -48px;
+}
+
+.stories-section__item {
+    max-width: 350px;
+    padding-top: 36px;
+    background-image: url(../../img/main/“.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    margin-bottom: 48px;
+}
+
+.stories-section__item:not(:last-child) {
+    padding-right: 7px;
+}
+
+.stories-section__item-desc {
+    @include font-style($font-Livvic600, 15px, 25px, #FFF) {
+        margin-top: 0;
+        margin-bottom: 24px;
+        display: block;
+    }
+}
+
+.stories-section__item-title {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: $color-rapture-blue;
+}
+
+.stories-section__item-subtitle {
+    @include font-style($font-Livvic500, 13px, 18px, #FFF) {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+}
+
+.stories-section__item-avatar {
+    border-radius: 50%;
+}
+
+@include max(1440px) {
+    .stories-section {
+        background-position-x: left, right;
+    }
+}
+
+@include max(868px) {
+    .stories-section {
+        padding: 100px 0;
+    }
+
+    .stories-section__txt {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 48px;
+        max-width: 573px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stories-section__list {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .stories-section__item {
+        max-width: 573px;
+    }
+
+    .stories-section__item-desc {
+        margin-bottom: 16px;
+    }
+
+    .stories-section__item-subtitle {
+        margin-bottom: 16px;
+    }
+}
+
+@include max(500px) {
+    .stories-section {
+        padding: 140px 0 164px 0;
+    }
+}
+

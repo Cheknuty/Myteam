@@ -1,0 +1,310 @@
+.directors-section {
+    padding: 140px 0 168px 0;
+    background-color: $color-deep-jungle-green;
+    text-align: center;
+    background-image: url(../../img/main/directors-sec-1.svg), url(../../img/main/directors-sec-2.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 720px), calc(50% + 650px);
+    background-position-y: top, bottom;
+}
+
+.directors-section__desc {
+    @include font-style($font-Livvic700, 48px, 48px, #FFF) {
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+}
+
+.directors-section__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -76px;
+}
+
+.directors-section__item {
+    padding: 32px 10px 56px 10px;
+    width: 350px;
+    background-color: $color-sacramento-state-green;
+    margin: 0 6px 76px 6px;
+    position: relative;
+}
+
+.directors-section__item-avatar {
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.directors-section__item-title {
+    margin: 0;
+    color: $color-rapture-blue;
+}
+
+.directors-section__item-subtitle {
+    @include font-style($font-Livvic500i, 15px, 25px, #FFF) {
+        margin: 0;
+    }
+}
+
+.directors-section__item-button {
+    position: absolute;
+    border: none;
+    padding: 28px 28px;
+    background-image: url(../../img/main/+.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-light-coral;
+    border-radius: 50%;
+    left: calc(50% - 30px);
+    bottom: -28px;
+}
+
+@include max(1440px) {
+    .directors-section {
+        background-position-x: calc(0% - 100px), right;
+    }
+}
+
+@include max(1106px) {
+    .directors-section__list {
+        justify-content: center;
+    }
+}
+
+@include max(768px) {
+    .directors-section {
+        padding: 100px 0 128px 0;
+    }
+
+    .directors-section__desc {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 48px;
+    }
+
+    .directors-section__item {
+        width: 281px;
+    }
+}
+
+@include max(720px) {
+    .directors-section {
+        background-position-y: -100px, bottom;
+    }
+}
+
+@include max(606px) {
+    .directors-section {
+        padding: 88px 0 116px 0;
+    }
+
+    .directors-section__list {
+        margin-bottom: -58px;
+    }
+
+    .directors-section__item {
+        width: 327px;
+        margin-bottom: 52px;
+        height: 260px;
+    }
+}
+
+.directors-section__item-desc {
+    @include font-style($font-Livvic600, 15px, 25px, #FFF){
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        display: none;
+        max-width: 254px;
+    }
+}
+
+.directors-section__item-box {
+    display: none;
+    align-items: center;
+}
+
+.directors-section__item-link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.directors-section__item-link:first-child {
+    margin-right: 16px;
+}
+
+.directors-section__item--active1 {
+    padding-top: 35px;
+    background-color: $color-primary;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+
+.directors-section__item--active2 {
+    background-color: $color-primary;
+    padding-top: 35px;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+
+.directors-section__item--active3 {
+    background-color: $color-primary;
+    padding-top: 35px;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+
+.directors-section__item--active4 {
+    background-color: $color-primary;
+    padding-top: 35px;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+
+.directors-section__item--active5 {
+    background-color: $color-primary;
+    padding-top: 35px;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+
+.directors-section__item--active6 {
+    background-color: $color-primary;
+    padding-top: 35px;
+    & .directors-section__item-avatar {
+        display: none;
+    }
+
+    & .directors-section__item-title {
+        margin-bottom: 8px;
+    }
+
+    & .directors-section__item-subtitle {
+        display: none;
+    }
+
+    & .directors-section__item-desc{
+        display: block;
+    }
+
+    & .directors-section__item-box {
+        display: inline-flex;
+    }
+
+    & .directors-section__item-button {
+        background-image: url(../../img/main/x.svg);
+        background-color: $color-rapture-blue;
+    }
+}
+

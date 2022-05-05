@@ -1,0 +1,40 @@
+.clients-section {
+    padding: 140px 0;
+    background-color: $color-sacramento-state-green;
+    text-align: center;
+    background-image: url(../../img/main/clients-bg.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: calc(50% - 520px);
+}
+
+.clients-section__heading {
+    @include font-style($font-Livvic700, 48px, 48px, #FFF) {
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+}
+
+.clients-section__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -60px;
+}
+
+.clients-section__item {
+    margin-bottom: 60px;
+}
+
+@include max(1440px) {
+    .clients-section {
+        background-position-x: left;
+    }
+}
+
+@include max(1000px) {
+    .clients-section__list {
+        flex-direction: column;
+    }
+}

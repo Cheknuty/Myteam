@@ -1,0 +1,29 @@
+.button-primary {
+    color: #FFF;
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button-primary:hover {
+    color: $color-primary;
+    background-color: #fff;
+}
+
+.button-primary:disabled, .button-primary--dark:disabled {
+    opacity: 0.25;
+}
+
+.button-primary--dark {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+}
+
+.button-primary--dark:hover {
+    color: #FFF;
+    border: 2px solid $color-primary;
+    border-radius: 24px;
+    background-color: $color-primary;
+}
